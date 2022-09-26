@@ -1700,7 +1700,15 @@ body._touch .menu__link {
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
+  overflow-wrap: break-word;
+	
+  /*
+  @supports .accordion__content (line-break: anywhere) {
+     line-break: anywhere;
+  }
+  */
 }
+
 .accordion-active .accordion__trigger {
   background-color: #0075c4;
   cursor: default;
